@@ -1,0 +1,224 @@
+@import url(blocks/header.css);
+@import url(blocks/footer.css);
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: ease 1s;
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+}
+
+button,
+select {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    padding-left: 110px;
+    padding-right: 110px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zagl {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+
+/* Меню */
+
+.menu {
+    background-color: #2D2D2D;
+    padding-top: 10px;
+}
+
+.change-category {
+    display: flex;
+    margin-right: 70px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.category {
+    padding: 15px 0;
+}
+
+.list-tovar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tovar {
+    border: 2px solid #FFD600;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 10px 35px;
+}
+
+.cont {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.buy {
+    border: 2px solid #FFD600;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 40px;
+    color: white;
+    font-size: 19px;
+    margin: 0 auto;
+    display: block;
+}
+
+.pizz-naz {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+
+/* Создай свою пиццу */
+
+.size {
+    margin: 10px 0;
+    width: 302px;
+    height: 63px;
+    background: #FFD600;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.size-p {
+    color: #000;
+    background-color: white;
+}
+
+.block-change {
+    display: flex;
+    flex-direction: column;
+}
+
+.stoim {
+    padding: 10px 30px;
+    border: 3px solid #FFD600;
+    box-sizing: border-box;
+}
+
+.cont-pizz {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.but {
+    margin-top: 85px;
+}
+
+.stoim-but {
+    background: #FFD600;
+    border-radius: 6px;
+    border: none;
+    margin-left: 138px;
+    padding: 5px 10px;
+}
+
+
+/* delivery */
+
+.delivery {
+    background: url(../img/del.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.block-preim {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preim {
+    display: flex;
+    width: 260px;
+    padding: 20px 0;
+    height: 290px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.preim img {
+    margin: 0 auto;
+    display: block;
+}
+
+.preim p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.del-opis {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 32px;
+    margin: 30px 260px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* tz */
+
+.block-otzyv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.otzyv {
+    margin: 10px 0;
+    flex: 50%;
+    display: flex;
+    padding: 20px 30px;
+    max-width: 49%;
+    border: 2px solid #FFD600;
+    box-sizing: border-box;
+}
+
+.otzyv p {
+    margin-left: 30px;
+}

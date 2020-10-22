@@ -1,0 +1,74 @@
+header {
+    background: url(../../img/header.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    font-size: 19px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.link-header a:hover {
+    text-shadow: 0px 0px 4px #FFFFFF;
+    transition: ease 1s;
+}
+
+.header-menu {
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding-top: 15px;
+}
+
+.link-header a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+.link-header {
+    padding: 10px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.right-menu {
+    display: flex;
+    height: 40px;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+
+.head-p {
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 170px;
+    font-size: 50px;
+    margin-bottom: 70px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.zak-head {
+    display: block;
+    width: 224px;
+    background: #007167;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.zak-head:hover {
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+    transition: ease 1s;
+}

@@ -1,135 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
 </head>
+
 <body>
     <header>
-    <nav>
-        <a href="#">
-            <img src="img/logo.png" alt="logo">
-        </a>
-        <ul class="header-menu">
-            <li class="link-header"><a href="#">Меню</a></li>
-            <li class="link-header"><a href="#">О нас</a></li>
-            <li class="link-header"><a href="#">Доставка</a></li>
-        </ul>
-        <ul class="right-menu">
-            <li class="link-header">
-                <a href="#"><img src="img/kor.svg" alt="корзина"></a>
-            </li>
-            <li class="link-header">
-                <a href="tel:82-34-56">82-34-56</a>
-            </li>
-        </ul>
-    </nav>
-    <h6>Лучшая пицца у нас!</h6>
-    <a href="#">Заказать</a>
-    </header>  
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+                <ul class="header-menu">
+                    <li class="link-header"><a href="#">Меню</a></li>
+                    <li class="link-header"><a href="#">О нас</a></li>
+                    <li class="link-header"><a href="#">Доставка</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li class="link-header">
+                        <a href="#"><img src="img/kor.svg" alt="корзина"></a>
+                    </li>
+                    <li class="link-header">
+                        <a href="tel:82-34-56">82-34-56</a>
+                    </li>
+                </ul>
+            </nav>
+            <h6 class="head-p">Лучшая пицца у нас!</h6>
+            <a href="#" class="zak-head">Заказать</a>
+        </div>
+    </header>
     <main>
         <section class="menu">
-            <h2>Меню</h2>
-            <ul class="change-category">
-                <li class="category">
-                    <img src="img/pizza.svg" alt="pizza">
-                </li>
-                <li class="category">
-                    <img src="img/salad.svg" alt="salad">
-                </li>
-                <li class="category">
-                    <img src="img/coconut-drink.svg" alt="drinks">
-                </li>
-            </ul>
-            <ul class="list-tovar">
-                <li class="tovar">
-                    <a href="#">
-                        <img src="img/pizza1.png" alt="pizza">
-                        <h3>Пицца Баварская</h3>
-                        <button type="button">Купить</button>
-                    </a>
-                </li>
-                <li class="tovar">
-                    <a href="#">
-                        <img src="img/pizza2.png" alt="pizza">
-                        <h3>Пицца Грибная</h3>
-                        <button type="button">Купить</button>
-                    </a>
-                </li>
-                <li class="tovar">
-                    <a href="#">
-                        <img src="img/pizza3.png" alt="pizza">
-                        <h3>Пицца Мясная</h3>
-                        <button type="button">Купить</button>
-                    </a>
-                </li>
-            </ul>
-            <a href="#">
-                <img src="img/kor.svg" alt="">
-                Корзина
-            </a>
+            <section class="container">
+                <h2 class="zagl">МЕНЮ</h2>
+                <div class="cont">
+                    <ul class="change-category">
+                        <li class="category">
+                            <img src="img/pizza.svg" alt="pizza">
+                        </li>
+                        <li class="category">
+                            <img src="img/salad.svg" alt="salad">
+                        </li>
+                        <li class="category">
+                            <img src="img/coconut-drink.svg" alt="drinks">
+                        </li>
+                    </ul>
+                    <ul class="list-tovar">
+                        <li class="tovar">
+                            <a href="#">
+                                <img src="img/pizza1.png" alt="pizza">
+                                <h3 class="pizz-naz">Пицца Баварская</h3>
+                                <button class="buy" type="button">Купить</button>
+                            </a>
+                        </li>
+                        <li class="tovar">
+                            <a href="#">
+                                <img src="img/pizza2.png" alt="pizza">
+                                <h3 class="pizz-naz">Пицца Грибная</h3>
+                                <button class="buy" type="button">Купить</button>
+                            </a>
+                        </li>
+                        <li class="tovar">
+                            <a href="#">
+                                <img src="img/pizza3.png" alt="pizza">
+                                <h3 class="pizz-naz">Пицца Мясная</h3>
+                                <button class="buy" type="button">Купить</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="zak-head" style="background-color: #FFD600;" href="#">
+                    <img style="width: 20px; margin-right: 10px;" src="img/kor.svg" alt=""> Корзина
+                </a>
+            </section>
         </section>
-        <section class="create">
-            <h2>СОЗДАЙ СВОЮ ПИЦЦУ</h2>
-            <div class="block-change">
-                <ul class="size">
-                    <li class="size-p">Маленькая</li>
-                    <li class="size-p">Средняя</li>
-                    <li class="size-p">Большая</li>
-                </ul>
-                <ul class="size">
-                    <li class="size-p">Традиционное</li>
-                    <li class="size-p">Тонкое</li>
-                </ul>
-                <ul class="size">
-                    <li class="size-p">Без сыра</li>
-                    <li class="size-p">Стандартная порция</li>
-                    <li class="size-p">Много сыра</li>
-                </ul>
-                <img src="img/pizza-konstr.png" alt="">
+        <section class="create container">
+            <h2 style="color: #2D2D2D;" class="zagl">СОЗДАЙ СВОЮ ПИЦЦУ</h2>
+            <div class="cont-pizz">
+                <div class="block-change">
+                    <select class="size">
+                    <option disable class="size-p">Выбери размер</option>
+                    <option value="Маленькая" class="size-p">Маленькая</option>
+                    <option value="Средняя" class="size-p">Средняя</option>
+                    <option value="Большая" class="size-p">Большая</option>
+                </select>
+                    <select class="size">
+                    <option disable class="size-p">Выбери тесто</option>
+                    <option value="Традиционное" class="size-p">Традиционное</option>
+                    <option value="Тонкое" class="size-p">Тонкое</option>
+                </select>
+                    <select class="size">
+                    <option disable class="size-p">Сыр</option>
+                    <option value="Без сыра" class="size-p">Без сыра</option>
+                    <option value="Стандартная порция" class="size-p">Стандартная порция</option>
+                    <option value="Много сыра" class="size-p">Много сыра</option>
+                </select>
+                </div>
+                <img style="width: 250px; height: 250px;" src="img/pizza-konstr.png" alt="">
                 <article class="stoim">
                     <h3>Ваша пицца</h3>
                     <p>Средняя; сыр блю чиз; моцарелла</p>
-                    <p>Итого:  380р. 
-                        <button></button>
+                    <p class="but">Итого: 380р.
+                        <button class="stoim-but"><img src="img/kor.svg" style="width: 20px;" alt=""></button>
                     </p>
                 </article>
             </div>
         </section>
         <section class="delivery">
-            <ul class="block-preim">
-                <li class="preim">
-                    <img src="img/truck.svg" alt="">
-                    <p>Быстро</p>
-                </li>
-                <li class="preim">
-                    <img src="img/money.svg" alt="">
-                    <p>Бесплатно</p>
-                </li>
-                <li class="preim">
-                    <img src="img/present.svg" alt="">
-                    <p>Дарим подарки</p>
-                </li>
-                <li class="preim">
-                    <img src="img/quality.svg" alt="">
-                    <p>Качественно</p>
-                </li>
-            </ul>
-            <p>У нас самая вкусная пицца, быстрая бесплатная доставка и низкие цены!</p>
-            <a href="#">Перейти к меню</a>
+            <div class="container">
+                <h2 style="color: #fff;" class="zagl">СОЗДАЙ СВОЮ ПИЦЦУ</h2>
+                <ul class="block-preim">
+                    <li class="preim">
+                        <img src="img/truck.svg" alt="" style="
+                        width: 130px;
+                    ">
+                        <p>Быстро</p>
+                    </li>
+                    <li class="preim">
+                        <img src="img/money.svg" alt="">
+                        <p>Бесплатно</p>
+                    </li>
+                    <li class="preim">
+                        <img src="img/present.svg" alt="">
+                        <p>Дарим подарки</p>
+                    </li>
+                    <li class="preim">
+                        <img src="img/quality.svg" alt="">
+                        <p>Качественно</p>
+                    </li>
+                </ul>
+                <p class="del-opis">У нас самая вкусная пицца, быстрая бесплатная доставка и низкие цены!</p>
+                <a class="zak-head" style="background-color: #FFD600;" href="#">Перейти к меню</a></div>
         </section>
-        <section class="otzyv">
+        <section class="container">
+            <h2 style="color: #2D2D2D;" class="zagl">ОТЗЫВЫ</h2>
             <ul class="block-otzyv">
                 <li class="otzyv">
                     <img src="img/per1.png" alt="">
-                    <p></p>
+                    <p>
+                        <strong>Семёнов Александр Петрович</strong> <br> Крутая пицца)
+                    </p>
                 </li>
-                <li class="otzyv"></li>
-                <li class="otzyv"></li>
-                <li class="otzyv"></li>
+                <li class="otzyv">
+                    <img src="img/per2.png" alt="">
+                    <p>
+                        <strong>Семёнов Александр Петрович</strong> <br> Крутая пицца)
+                    </p>
+                </li>
+                <li class="otzyv">
+                    <img src="img/per3.png" alt="">
+                    <p>
+                        <strong>Семёнова Александра Петровна</strong> <br> Крутая пицца)
+                    </p>
+                </li>
+                <li class="otzyv">
+                    <img src="img/per4.png" alt="">
+                    <p>
+                        <strong>Семёнов Александр Петрович</strong> <br> Крутая пицца)
+                    </p>
+                </li>
             </ul>
         </section>
-    </main>  
+    </main>
+    <footer class="footer">
+        <div class="container foo">
+            <div class="footer-block-wraper">
+                <section class="footer-block">
+                    <h4 class="h-nav-footer">Navigation</h4>
+                    <hr class="line-footer">
+                    <ul class="nav-footer-wrap">
+                        <li class="nav-footer"><a href="#">Меню</a></li>
+                        <li class="nav-footer"><a href="#">Создать свою пиццу</a></li>
+                        <li class="nav-footer"><a href="#">Отзывы</a></li>
+                        <li class="nav-footer"><a href="#">Доставка</a></li>
+                    </ul>
+                </section>
+                <section class="footer-block">
+                    <h4 class="h-nav-footer">Customer Information</h4>
+                    <hr class="line-footer">
+                    <ul class="nav-footer-wrap">
+                        <li class="nav-footer"><a href="#">Contact Us</a></li>
+                        <li class="nav-footer"><a href="#">Sale Exclusions</a></li>
+                        <li class="nav-footer"><a href="#">Shipping & Returns</a></li>
+                        <li class="nav-footer"><a href="#">Terms & Conditions</a></li>
+                        <li class="nav-footer"><a href="#">Privacy Policy</a></li>
+                        <li class="nav-footer"><a href="#">Search</a></li>
+                    </ul>
+                </section>
+                <section class="footer-block">
+                    <h4 class="h-nav-footer">Connect</h4>
+                    <hr class="line-footer">
+                    <input name="a" placeholder="Email" class="pole">
+                    <input type="submit" class="btnms" value="JOIN">
+                    <ul class="soc-footer">
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="img/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="img/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="img/pinterest.png" alt="pinterest">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" src="img/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <hr class="line-footer line-footer-bottom">
+            <ul class="rat-wrap">
+                <li class="rat bottom-link star" style="margin-left: 0;">
+                    Company Rating
+                    <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="Оценка «5»"></label>
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="Оценка «4»"></label>
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="Оценка «3»"></label>
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="Оценка «2»"></label>
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="Оценка «1»"></label>
+                    </div>
+                </li>
+                <li class="rat">
+                    Copyright © 2018 Dlk • Pronto Pizza
+                </li>
+                <li class="rat bottom-link web-rat">
+                    Web Design — dld
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
